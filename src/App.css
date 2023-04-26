@@ -1,0 +1,48 @@
+.Red {
+  color: red;
+  font-size: 80px;
+  padding: 30px;
+}
+.titre {
+  font-size: 20px;
+  color: white;
+  padding: 30px;
+}
+.photos {
+  /* height: 100px; */
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  list-style: none;
+  width: auto;
+  background-color: white;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.photos::-webkit-scrollbar {
+  display: none;
+}
+
+.Photo {
+  flex-shrink: 1; /* NÉCESSAIRE POUR NE PAS COMPRESSER LES ITEMS */
+  height: 170px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  object-position: center cover;
+  object-position: 50% 50%;
+}
+
+.background_Black {
+  background-color: black;
+  width: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
